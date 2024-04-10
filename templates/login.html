@@ -18,7 +18,7 @@
         </div>
         <form class="login-form" method="post">
           {%csrf_token%}
-          <input type="email" name="email" placeholder="email"/>
+          <input type="username" name="username" placeholder="username"/>
           <input type="password" name="password" placeholder="password"/>
           <button>login</button>
           <p class="message">Not registered? <a href={% url 'signup_url' %}>Create an account</a></p>

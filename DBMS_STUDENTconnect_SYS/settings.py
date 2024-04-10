@@ -74,13 +74,25 @@ WSGI_APPLICATION = 'DBMS_STUDENTconnect_SYS.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+'''
+DATABASES={
+    'default':{
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'student_connects',
+        'USER':'root',
+        'PASSWORD':'#sajanstha88361922751$',
+        'HOST':'localhost',
+        'PORT':'3306' 
+    }
+}
+
 
 
 # Password validation
@@ -120,7 +132,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
+STATIC_ROOT=os.path.join(BASE_DIR,'assests')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 

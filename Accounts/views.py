@@ -28,4 +28,4 @@ def login(request):
             print("login successful")
             return redirect(reverse('home_url'))
         print("invalid login attempt")
-    return render(request,'Home.html')
+    return render(request,'login.html')

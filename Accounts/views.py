@@ -28,9 +28,4 @@ def login(request):
             print("login successful")
             return redirect(reverse('home_url'))
         print("invalid login attempt")
-    return render(request,'login.html')
-
-
-def logout(request):
-    logout_user(request)
-    return redirect(reverse('login_url'))
+    return render(request,'Home.html')

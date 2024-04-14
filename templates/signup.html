@@ -18,17 +18,10 @@
         </div>
         <form class="login-form" method="post">
           {%csrf_token%}
-            <input type="text" name="firstname" placeholder="First Name"/>
-            <input type="text" name="lastname" placeholder="Last Name"/>
-            <input type="text" name="reg_no" placeholder="Registration Number"/>
-            <input type="text" name="branch" placeholder="Branch"/>
-            <input type="text" name="semester" placeholder="Semester"/>
-            <input type="text" name="gender" placeholder="Gender"/>
-            <input type="text" name="contact" placeholder="Contact Number"/>
             <input type="text" name="username" placeholder="username"/>
             <input type="email" name="email" placeholder="email"/>
             <input type="password" name="password1" placeholder="password"/>
-              <input type="password" name="password2" placeholder="confirm password"/>
+            <input type="password" name="password2" placeholder="confirm password"/>
           <button type="submit">SIGNUP</button>
           <p class="message">Already have an account? <a href={% url 'login_url' %}>Login here</a></p>
         </form>

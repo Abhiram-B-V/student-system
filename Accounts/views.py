@@ -13,9 +13,11 @@ def signup(request):
         password2=request.POST['password2']
         if(User.objects.filter(email=email).exists()):
             messages.error(request,'User or Email already exist')
+            print('user already exist')
             return redirect(reverse('signup_url'))
         User.objects.create_user(username=username,email=email,password=password1)
-        return redirect(reverse('home_url'))
+        return redirect(reverse('login_url'))
+    print("successfully login")
     return render(request,'signup.html')
 
 

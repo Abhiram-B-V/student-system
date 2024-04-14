@@ -85,9 +85,9 @@ DATABASES = {
 DATABASES={
     'default':{
         'ENGINE':'django.db.backends.mysql',
-        'NAME':'student_connects',
+        'NAME':'connected',
         'USER':'root',
-        'PASSWORD':'#sajanstha88361922751$',
+        'PASSWORD':'ashborn',
         'HOST':'localhost',
         'PORT':'3306' 
     }
